@@ -1,0 +1,64 @@
+# ===============================
+# Java / Maven
+# ===============================
+
+# Maven build output
+/target/
+
+# Maven wrapper (if you add it later)
+/.mvn/wrapper/maven-wrapper.jar
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# ===============================
+# VS Code
+# ===============================
+
+.vscode/
+.history/
+
+# ===============================
+# IntelliJ IDEA
+# ===============================
+
+.idea/
+*.iml
+
+# ===============================
+# Eclipse
+# ===============================
+
+.project
+.classpath
+.settings/
+
+# ===============================
+# Mac / Windows OS Files
+# ===============================
+
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Dev Containers
+# ===============================
+
+# Keep devcontainer config tracked,
+# but ignore user-specific overrides
+.devcontainer/*.local.json
+
+# ===============================
+# Environment Files (future-proofing)
+# ===============================
+
+.env
+*.env

@@ -1,0 +1,12 @@
+{
+  "name": "CIS-18B Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  }
+}
