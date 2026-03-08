@@ -1,6 +1,10 @@
 package edu.norco.cis18b.week3.coffeeshop;
 import java.util.List;
 import java.util.ArrayList;
+import java.math.BigDecimal;
+import java.util.Collections;
+
+
 class Order{
     String orderId;
     List<MenuItem> items;
@@ -11,11 +15,30 @@ class Order{
         this.orderId = orderId;
         this.items = new ArrayList<>();
     }
-
+    //item cannot be null
     void addItem(MenuItem item){
         if(item == null){
-            throw new IllegalArgumentException("Item cannont be null")
+            throw new IllegalArgumentException("Item cannot be null");
+        }
+        items.add(item);
+    }
+
+    List<MenuItem> getItems() {
+        return Collections.unmodifiableList(items);
+    }
+    BigDecimal total() {
+        BigDecimal sum = BigDecimal.ZERO;
+
+        for (MenuItem item : items) {
+            sum = sum.add(item.getThePrice());
         }
 
+        return sum;
     }
+    String getOrderId() {
+        return orderId;
+    }
+
+
+
 }

@@ -13,7 +13,10 @@ class MenuItem {
             throw new IllegalArgumentException("Price must be greater than or equal to zero");
         }
 
-
         this.name = name;
         this.sku = sku;
-        this.price = price;}}
+        this.price = price;}
+     BigDecimal getThePrice() {
+    return price;
+}
+    }
