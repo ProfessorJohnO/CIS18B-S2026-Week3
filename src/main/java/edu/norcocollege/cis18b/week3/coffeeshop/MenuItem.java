@@ -1,8 +1,9 @@
+package edu.norco.cis18b.week3.coffeeshop;
 import java.math.BigDecimal;
 class MenuItem {
-    String name;
-    String sku;
-    BigDecimal price;
+    private String name;
+    private String sku;
+    private BigDecimal price;
     MenuItem(String name, String sku, BigDecimal price) {
         if(name == null||name.isBlank()) {
             throw new IllegalArgumentException("Name cannot be null or blank");}
