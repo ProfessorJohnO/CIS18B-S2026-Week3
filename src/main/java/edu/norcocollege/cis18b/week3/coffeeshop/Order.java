@@ -5,7 +5,7 @@ class Order{
     List<MenuItem> items;
     Order(String orderId){
         if (orderId == null ||order.Id.isBlank()) {
-                throw new IllegalArgumentException("Price must be greater than or equal to zero");
+                throw new IllegalArgumentException("orderId cannot be null or blank");
         }
         this.orderId = orderId;
         this.items = new ArrayList<>();
