@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.math.BigDecimal;
 import java.util.Collections;
 
-
 class Order{
     String orderId;
     List<MenuItem> items;
@@ -22,17 +21,14 @@ class Order{
         }
         items.add(item);
     }
-
     List<MenuItem> getItems() {
         return Collections.unmodifiableList(items);
     }
     BigDecimal total() {
         BigDecimal sum = BigDecimal.ZERO;
-
         for (MenuItem item : items) {
             sum = sum.add(item.getThePrice());
         }
-
         return sum;
     }
     String getOrderId() {
