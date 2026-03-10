@@ -3,7 +3,6 @@ import java.util.List;
 import java.util.ArrayList;
 import java.math.BigDecimal;
 import java.util.Collections;
-
 class Order{
     String orderId;
     List<MenuItem> items;
@@ -27,7 +26,7 @@ class Order{
     BigDecimal total() {
         BigDecimal sum = BigDecimal.ZERO;
         for (MenuItem item : items) {
-            sum = sum.add(item.getThePrice());
+            sum = sum.add(item.getPrice());
         }
         return sum;
     }

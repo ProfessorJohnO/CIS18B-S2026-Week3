@@ -56,7 +56,7 @@ public class CustomDrink extends Beverage {
         private int espressoShots = 1;
         private List<String> extras = new ArrayList<>();
         public Builder(String sku) {
-            this.sku = sku;
+            this.sku = "Cutom";
         }
         public Builder size(Size size) {
             this.size = size;

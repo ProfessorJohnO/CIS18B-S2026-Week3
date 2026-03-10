@@ -1,6 +1,5 @@
 package edu.norco.cis18b.week3.coffeeshop;
 import java.math.BigDecimal;
-
 public abstract class Beverage extends MenuItem{
     public enum Size{
         SMALL,

@@ -1,6 +1,6 @@
 package edu.norco.cis18b.week3.coffeeshop;
 import java.math.BigDecimal;
-class MenuItem {
+public class MenuItem {
     private String name;
     private String sku;
     private BigDecimal price;
@@ -16,7 +16,14 @@ class MenuItem {
         this.name = name;
         this.sku = sku;
         this.price = price;}
-     BigDecimal getThePrice() {
+     public BigDecimal getThePrice() {
     return price;
-}
+    }
+    public String getName() {
+        return name;
+    }
+
+    public String getSku() {
+        return sku;
+    }
     }

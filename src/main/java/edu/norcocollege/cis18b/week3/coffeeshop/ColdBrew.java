@@ -1,8 +1,8 @@
 package edu.norco.cis18b.week3.coffeeshop;
 import java.math.BigDecimal;
 public class ColdBrew extends Beverage {
-    public ColdBrew(String sku, Size size) {
-        super(sku,"Cold Brew",BigDecimal.valueOf(4.00).multiply(getMultiplier(size)),size);
+    public ColdBrew(Size size) {
+        super("Cold Brew",BigDecimal.valueOf(4.00).multiply(getMultiplier(size)),size);
     }
     private static BigDecimal getMultiplier(Size size) {
         switch (size) {
