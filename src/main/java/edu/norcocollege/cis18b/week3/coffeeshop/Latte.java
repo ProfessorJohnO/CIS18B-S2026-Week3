@@ -1,8 +1,8 @@
-package edu.norco.cis18b.week3.coffeeshop;
+package edu.norco.cis18b.coffeeshop;
 import java.math.BigDecimal;
 public class Latte extends Beverage {
     public Latte(Size size) {
-        super("Latte",BigDecimal.valueOf(4.50).multiply(getMultiplier(size)), size);
+        super("LATTE","Latte",BigDecimal.valueOf(4.50).multiply(getMultiplier(size)), size);
     }
     private static BigDecimal getMultiplier(Size size) {
         switch (size) {

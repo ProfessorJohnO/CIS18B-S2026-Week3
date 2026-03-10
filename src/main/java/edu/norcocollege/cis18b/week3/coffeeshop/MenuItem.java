@@ -1,10 +1,10 @@
-package edu.norco.cis18b.week3.coffeeshop;
+package edu.norco.cis18b.coffeeshop;
 import java.math.BigDecimal;
-public class MenuItem {
+class MenuItem {
     private String name;
     private String sku;
     private BigDecimal price;
-    MenuItem(String name, String sku, BigDecimal price) {
+    public MenuItem(String name, String sku, BigDecimal price) {
         if(name == null||name.isBlank()) {
             throw new IllegalArgumentException("Name cannot be null or blank");}
         if(sku == null||sku.isBlank()) {
@@ -16,7 +16,7 @@ public class MenuItem {
         this.name = name;
         this.sku = sku;
         this.price = price;}
-     public BigDecimal getThePrice() {
+    public BigDecimal getPrice() {
     return price;
     }
     public String getName() {
@@ -26,4 +26,4 @@ public class MenuItem {
     public String getSku() {
         return sku;
     }
-    }
+}

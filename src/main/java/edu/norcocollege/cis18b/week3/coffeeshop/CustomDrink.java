@@ -1,4 +1,4 @@
-package edu.norco.cis18b.week3.coffeeshop;
+package edu.norco.cis18b.coffeeshop;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
