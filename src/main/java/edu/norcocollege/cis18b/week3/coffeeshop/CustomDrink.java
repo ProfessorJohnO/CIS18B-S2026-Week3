@@ -55,6 +55,9 @@ public class CustomDrink extends Beverage {
         private Temperature temperature = Temperature.HOT;
         private int espressoShots = 1;
         private List<String> extras = new ArrayList<>();
+        public Builder(){
+        }
+
         public Builder(String sku) {
             this.sku = "Cutom";
         }
@@ -76,7 +79,7 @@ public class CustomDrink extends Beverage {
         }
         public Builder espressoShots(int shots) {
             if (shots < 1) {
-                throw new IllegalArgumentException("espressoShots must be >= 1");
+                throw new IllegalArgumentException("espresso shots must be >= 1");
             }
             this.espressoShots = shots;
             return this;
