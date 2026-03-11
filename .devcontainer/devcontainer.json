@@ -1,7 +1,9 @@
 {
   "name": "CIS-18B Dev Container",
   "image": "mcr.microsoft.com/devcontainers/java:17",
-  "features": {},
+  "features": {
+    "ghcr.io/devcontainers-extra/features/maven-sdkman:2": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
