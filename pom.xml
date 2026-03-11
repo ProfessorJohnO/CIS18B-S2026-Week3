@@ -5,7 +5,9 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>edu.norcocollege.cis18b</groupId>
+    <!-- I edited this -->
+    <groupId>edu.norco.cis18b</groupId>
+
     <artifactId>advanced-java-week3</artifactId>
     <version>1.0.0</version>
 
@@ -18,7 +20,8 @@
         <profile>
             <id>run-app</id>
             <properties>
-                <mainClass>edu.norcocollege.cis18b.week3.coffeeshop</mainClass>
+                <!-- I edited this since I editted the path and package in tests because it wasn't working -->
+                <mainClass>edu.norco.cis18b.week3.coffeeshop.App</mainClass>
             </properties>
         </profile>
 
@@ -56,6 +59,7 @@
                     </statelessTestsetInfoReporter>
                 </configuration>
             </plugin>
+
         <!-- Compile plugin (already present normally) -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -72,7 +76,7 @@
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
             <version>3.1.0</version>
-            <configuration>mvn compile exec:java -Prun-app
+            <configuration>
                 <mainClass>${mainClass}</mainClass>
             </configuration>
         </plugin>            
