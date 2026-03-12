@@ -1,4 +1,4 @@
-package edu.norcocollege.cis18b.week3.coffeeshop;
+package edu.norco.cis18b.week3.coffeeshop;
 
 import java.math.BigDecimal;
 
