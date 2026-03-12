@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 import java.time.Instant;
 
-public class CreditCardPayment(String last4)
+public class CreditCardPayment implements PaymentMethod
 {
     private final String last4;
 
